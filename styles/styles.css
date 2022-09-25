@@ -20,7 +20,7 @@ body {
 body main article {
   background: hsl(217deg, 19%, 24%);
   border-radius: 10px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   padding: 41px 24px 66px;
