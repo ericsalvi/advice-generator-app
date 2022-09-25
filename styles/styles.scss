@@ -1,0 +1,62 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: $darkBlue;
+  color: $lightCyan;
+  display: grid;
+  font-family: $manrope;
+  min-height: 100vh;
+  padding: 120px 16px;
+  //   place-content: center;
+
+  main {
+    article {
+      background: $darkGrayishBlue;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 41px 24px 66px;
+      position: relative;
+      text-align: center;
+
+      p {
+        color: $neonGreen;
+        font-size: 0.411rem;
+        letter-spacing: 3px;
+        margin-left: 3px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-size: 0.85rem;
+        letter-spacing: -0.2px;
+        line-height: 1.4;
+        margin: 1.075em 0;
+      }
+      &::after {
+        background: $neonGreen;
+        border-radius: 50px;
+        bottom: -32.5px;
+        color: $darkBlue;
+        content: url("../images/icon-dice.svg");
+        display: grid;
+        height: 65px;
+        place-items: center;
+        padding-top: 5px;
+        position: absolute;
+        width: 65px;
+      }
+    }
+  }
+}
