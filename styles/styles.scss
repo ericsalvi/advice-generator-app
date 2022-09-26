@@ -10,6 +10,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+img {
+  user-select: none;
+}
+
 body {
   background: $darkBlue;
   color: $lightCyan;
@@ -17,11 +21,11 @@ body {
   font-family: $manrope;
   min-height: 100vh;
   padding: 120px 16px;
-  //   place-content: center;
 
   main {
     article {
       background: $darkGrayishBlue;
+      box-shadow: 28px 30px 29px -20px rgba(0, 0, 0, 0.15);
       border-radius: 10px;
       display: none;
       flex-direction: column;
@@ -44,19 +48,31 @@ body {
         line-height: 1.4;
         margin: 1.075em 0;
       }
-      &::after {
+      button {
+        -webkit-appearance: none;
         background: $neonGreen;
-        border-radius: 50px;
-        bottom: -32.5px;
-        color: $darkBlue;
-        content: url("../images/icon-dice.svg");
-        display: grid;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
         height: 65px;
-        place-items: center;
-        padding-top: 5px;
-        position: absolute;
+        margin-bottom: -100px;
+        margin-top: 32px;
+        outline: none;
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
         width: 65px;
+
+        &:hover {
+          box-shadow: 0px 0px 30px 0px $neonGreen;
+          transform: scale(1.08);
+        }
+
+        &:active {
+          box-shadow: 0px 0px 15px 0px $neonGreen;
+          transform: scale(0.92);
+        }
       }
     }
   }
 }
+
+@import "media";
