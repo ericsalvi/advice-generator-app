@@ -9,6 +9,13 @@
   -webkit-font-smoothing: antialiased;
 }
 
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 body {
   background: hsl(218deg, 23%, 16%);
   color: hsl(193deg, 38%, 86%);
@@ -19,6 +26,7 @@ body {
 }
 body main article {
   background: hsl(217deg, 19%, 24%);
+  box-shadow: 28px 30px 29px -20px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   display: none;
   flex-direction: column;
@@ -40,16 +48,42 @@ body main article h1 {
   line-height: 1.4;
   margin: 1.075em 0;
 }
-body main article::after {
+body main article button {
+  -webkit-appearance: none;
   background: hsl(150deg, 100%, 66%);
-  border-radius: 50px;
-  bottom: -32.5px;
-  color: hsl(218deg, 23%, 16%);
-  content: url("../images/icon-dice.svg");
-  display: grid;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
   height: 65px;
-  place-items: center;
-  padding-top: 5px;
-  position: absolute;
+  margin-bottom: -100px;
+  margin-top: 32px;
+  outline: none;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
   width: 65px;
+}
+body main article button:hover {
+  box-shadow: 0px 0px 30px 0px hsl(150deg, 100%, 66%);
+  transform: scale(1.08);
+}
+body main article button:active {
+  box-shadow: 0px 0px 15px 0px hsl(150deg, 100%, 66%);
+  transform: scale(0.92);
+}
+
+@media (min-width: 601px) {
+  body {
+    padding: 0px;
+    place-content: center;
+  }
+  body main article {
+    max-width: 540px;
+    padding: 41px 36px 66px;
+  }
+  body main article p {
+    font-size: 0.5rem;
+  }
+  body main article h1 {
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+  }
 }/*# sourceMappingURL=styles.css.map */
