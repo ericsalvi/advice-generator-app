@@ -50,5 +50,5 @@ I actually learned a neat little trick from @maiaflow about box shadows. Typical
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Eric Salvi](https://github.com/ericsalvi)
+- Frontend Mentor - [@ericsalvi](https://www.frontendmentor.io/profile/ericsalvi)
