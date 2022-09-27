@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor.io](https://your-solution-url.com)
+- Solution URL: [FrontendMentor.io](https://www.frontendmentor.io/solutions/advice-generator-app-semantic-html-axios-and-a-whole-lot-of-fun-k_y1ioogCK)
 - Live Site URL: [https://ericsalvi.github.io/advice-generator-app/](https://ericsalvi.github.io/advice-generator-app/)
 
 ## My process

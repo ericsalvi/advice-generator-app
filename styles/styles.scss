@@ -23,13 +23,11 @@ body {
   padding: 120px 16px;
 
   main {
-    margin-top: -30px; //delete this
     article {
       background: $darkGrayishBlue;
       box-shadow: 28px 30px 29px -20px rgba(0, 0, 0, 0.15);
       border-radius: 10px;
-      // display: none;
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: center;
       padding: 41px 24px 66px;

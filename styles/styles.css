@@ -24,14 +24,11 @@ body {
   min-height: 100vh;
   padding: 120px 16px;
 }
-body main {
-  margin-top: -30px;
-}
 body main article {
   background: hsl(217deg, 19%, 24%);
   box-shadow: 28px 30px 29px -20px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   padding: 41px 24px 66px;
