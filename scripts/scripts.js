@@ -10,7 +10,7 @@ async function generateAdvice() {
   let adviceIdContent = data.id;
   let adviceContent = data.advice;
 
-  // needed to conver the straight single quote with the fancy one.
+  // needed to convert the straight single quote with the fancy one.
   let convertedAdvice = adviceContent.replace(/'/g, "&rsquo;");
 
   adviceId.innerHTML = `Advice #${adviceIdContent}`;
